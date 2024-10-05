@@ -12,7 +12,8 @@ const Navbar = () => {
       return [
         <li key="1"><Link to="/profile">Profile</Link></li>,
         <li key="2"><Link to="/create">Create Post</Link></li>,
-        <li key="3">
+        <li key="3"><Link to="/myfollowingpost">My following Posts</Link></li>,
+        <li key="4">
           <button
             className="btn #c62828 red darken-3"
             onClick={() => {

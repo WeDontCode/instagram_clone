@@ -12,7 +12,7 @@ const Home = () => {
   }, [state]);
 
   const fetchPosts = () => {
-    fetch('/allpost', {
+    fetch('/getsubpost', {
       headers: {
         "Authorization": "Bearer " + localStorage.getItem("jwt"),
       },
@@ -137,6 +137,7 @@ const Home = () => {
     <div className='home'>
       {data.length > 0 ? (
         data.map(item => (
+            
           <div className='card home-card' key={item._id}>
             <h5 style={{padding:"5px"}}>
               <Link 
